@@ -15,9 +15,11 @@ public class Main {
 
         Estudiante[] estudiantes = { e1, e2, e3, e4, e5 };
 
-        System.out.println("Estudiantes sin ordenar"); //uno con for each
+        System.out.println("Estudiantes sin ordenar");
+        int cont = 1;//uno con for each
         for (Estudiante est: estudiantes){
-            System.out.println(est);
+            System.out.println(cont+ "." + est);
+            cont++;
         }
 
         System.out.println("---------------------------");
@@ -25,7 +27,7 @@ public class Main {
         Arrays.sort(estudiantes);
         System.out.println("Estudiantes ordenados"); // otro for normal
         for (int i = 0; i < estudiantes.length; i++) {
-            System.out.println(estudiantes[i]);
+            System.out.println( (i+1)+"."+estudiantes[i]);
 
 
 
