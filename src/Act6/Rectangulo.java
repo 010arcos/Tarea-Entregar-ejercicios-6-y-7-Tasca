@@ -44,29 +44,7 @@ public class Rectangulo extends Forma implements Comparable<Rectangulo>{
         }
 
     }
-/*
-    public int CompareTo(Rectangulo o){
-    int resultado;
-    if(o.getArea() >this.getArea()){
-    resultado=1;
-    }
-    else if(o.getArea()<this.getArea()){
-    resultado=-1;
-    }
-    else{resultado=0;}
-    return resultado;
 
-    }
-*/
-
-    /*alternativa a este compareto
-
-    @Override
-    public int compareTo(Rectangulo otroRectangulo) {
-        // Comparar por área
-        return Integer.compare(this.calcularArea(), otroRectangulo.calcularArea());
-    }
-     */
 
     @Override
     public String toString() {
